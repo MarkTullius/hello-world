@@ -1,0 +1,24 @@
+<!doctype html>
+<title> Danny Fists Cats!  </title>
+<h1> How Many Cats Can Danny Fist? </h1>
+<form>
+<style type="text/css">
+   input {font-weight:bold;}
+</style>
+  Number of cats:
+  <input type="text" size="12" id="c2f">
+  <input type="submit" onclick="c2fclc(event);">
+</form>
+<script>
+function c2fclc(event) {
+  var cats2fist = document.getElementById('c2f').value;
+  event.preventDefault();
+  if (cats2fist < 24) {
+  alert("Danny can fist more than " + cats2fist + " cats! Think bigger!");
+  } else if (cats2fist > 24) {
+			alert("Danny can't fist " + cats2fist + " cats! Are you mental?");
+		}
+	else { alert("Yes! Danny can fist " + cats2fist + " cats! Well done!");
+	}
+}
+</script>
